@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Webpack Boilerplate</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="build/style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
+</head>
+
+<body>
+    <!--EXAMPLE PAGE STARTS-->
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-default navbar-fixed-top nav_bar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Network Analysis Report - Made by Matan Gubkin</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main_wrapper">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 table_section_wrapper">
+          <h3 class="section_header">MALWARE FILES FOUND <span class="badge blue_background">32 FILES DETECTED</span></h3>
+          <div class="table_wrapper">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>File Name</th>
+                  <th>Contagious</th>
+                  <th>Detection Date</th>
+                  <th>Danger Level</th>
+                  <th>Infection Channel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Malware.exe</td>
+                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                  <td>8/4/2015</td>
+                  <td><span class="badge alert_badge">HIGH</span></td>
+                  <td><span class="badge default_badge">BROWSER (email) </span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <h3 class="section_header">COMMAN RATE IN THE WORLD</h3>
+          <div class="map_wrapper"></div>
+        </div>
+
+        <div class="split_border"></div>
+
+        <!-- BOTTOM PART -->
+
+        <div class="row bottom_part_sections">
+          <div class="col-xs-6 col-sm-4 info_wrapper">
+            <h3 class="section_header">FILE INFO</h3>
+            <dl class="dl-horizontal">
+              <div>
+                <dt>File Name:</dt>
+                <dd>Malware.exe</dd>
+              </div>
+              <div>
+                <dt>Contagious</dt>
+                <dd><span class="glyphicon glyphicon-ok red_color" aria-hidden="true"></span></dd>
+              </div>
+              <div>
+                <dt>Detection Date</dt>
+                <dd>8/4/2015</dd>
+              </div>
+              <div>
+                <dt>Danger Level</dt>
+                <dd><span class="badge alert_badge">HIGH</span></dd>
+              </div>
+              <div>
+                <dt>Infection Chanel</dt>
+                <dd><span class="badge default_badge">BROWSER (email) </span></dd>
+              </div>
+              <div>
+                <dt>Common File Location:</dt>
+                <dd>D:\Projects\myapp</dd>
+              </div>
+              <div>
+                <dt>Number of Infected Computers in Network:</dt>
+                <dd><span class="badge alert_badge">42</span></dd>
+              </div>
+              <div>
+                <dt>COMMON RATE IN THE WORLD</dt>
+                <dd><span class="badge alert_badge">42,895</span></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <h3 class="section_header">CLASSIFICATION</h3>
+            <div class="radarChart no_border"></div>
+          </div>
+          <div class="col-xs-6 col-sm-4 no_border">
+            <h3 class="section_header">FILE MALICIOUS ACTIVITY VISUALIZATION</h3>
+            <div class="visual_gif_wrapper">
+              <image src="https://media.giphy.com/media/J5WxxvyqXTRyU/giphy.gif" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <!-- <footer class="footer">
+        <p>Webpack Boilerplate built by <a href="https://github.com/geniuscarrier">@geniuscarrier</a>.</p>
+        <p>
+            <a href="#" id="scrollTo-myCarousel">Back to top</a>
+        </p>
+    </footer> -->
+    <!--EXAMPLE PAGE ENDS-->
+    <script src="build/bundle.js"></script>
+</body>
+
+</html>
